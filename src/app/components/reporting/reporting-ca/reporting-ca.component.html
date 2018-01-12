@@ -1,4 +1,64 @@
 <app-filtres></app-filtres>
+
+<p-dataTable [value]=" ">
+  <p-headerColumnGroup>
+    <p-row>
+      <p-column header="Sens"></p-column>
+      <p-column header="Nature"></p-column>
+      <p-column header="Tiers"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Revenu" rowspan="6"></p-column>
+      <p-column header="Facture" rowspan="5"></p-column>
+      <p-column header="Banque Inter"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Taliko"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="MDC"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Edu Nat"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Facture"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Revenu" colspan="2"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Charge" rowspan="8"></p-column>
+      <p-column header="Facture" rowspan="6"></p-column>
+      <p-column header="CHR Aster"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="PLEXCOFO"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="By Arch"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="ICV"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="AHEAD"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Facture"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Frais" colspan="2"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Charge" colspan="2"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Totaux" colspan="3"></p-column>
+    </p-row>
+    </p-headerColumnGroup>
+</p-dataTable>
+
 <p-dataTable [value]="sales">
   <p-headerColumnGroup>
     <p-row>
@@ -31,3 +91,5 @@
     </p-row>
   </p-footerColumnGroup>
 </p-dataTable>
+
+

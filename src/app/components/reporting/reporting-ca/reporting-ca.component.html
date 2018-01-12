@@ -1,5 +1,37 @@
 <app-filtres></app-filtres>
 
+<p-dataTable [value]="ca">
+  <p-headerColumnGroup>
+    <p-row>
+      <p-column header="Charge" colspan="8"></p-column>
+      <p-column header="Revenu" colspan="6"></p-column>
+      <p-column header="Sens"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Charge" rowspan="2"></p-column>
+      <p-column header="Frais" rowspan="2"></p-column>
+      <p-column header="Facture" colspan="6"></p-column>
+      <p-column header="Revenu" rowspan="2"></p-column>
+      <p-column header="Facture" colspan="5"></p-column>
+      <p-column header="Nature"></p-column>
+    </p-row>
+    <p-row>
+      <p-column header="Facture"></p-column>
+      <p-column header="AHEAD"></p-column>
+      <p-column header="ICV"></p-column>
+      <p-column header="By Arch"></p-column>
+      <p-column header="Plex"></p-column>
+      <p-column header="Chr"></p-column>
+      <p-column header="Facture"></p-column>
+      <p-column header="Educ"></p-column>
+      <p-column header="MSF"></p-column>
+      <p-column header="Taliko"></p-column>
+      <p-column header="Banque int"></p-column>
+      <p-column header="Tiers "></p-column>
+    </p-row>
+  </p-headerColumnGroup>
+</p-dataTable>
+
 <p-dataTable [value]=" ">
   <p-headerColumnGroup>
     <p-row>

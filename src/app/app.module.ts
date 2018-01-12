@@ -9,6 +9,7 @@ import { DataTableModule } from 'primeng/primeng';
 import { FiltresComponent } from './components/filtres/filtres.component';
 import { FiltresTierComponent } from './components/filtres/filtres-tier/filtres-tier.component';
 import { FiltresDateComponent } from './components/filtres/filtres-date/filtres-date.component';
+import { FiltresService } from './services/filtres.service';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { FiltresDateComponent } from './components/filtres/filtres-date/filtres-
     BrowserAnimationsModule,
     DataTableModule
   ],
-  providers: [],
+  providers: [FiltresService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,6 +10,8 @@ import { FiltresComponent } from './components/filtres/filtres.component';
 import { FiltresTierComponent } from './components/filtres/filtres-tier/filtres-tier.component';
 import { FiltresDateComponent } from './components/filtres/filtres-date/filtres-date.component';
 import { FiltresService } from './services/filtres.service';
+import {ReportingCaService} from './services/reporting-ca.service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -25,9 +27,13 @@ import { FiltresService } from './services/filtres.service';
     RoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    DataTableModule
+    DataTableModule,
+    HttpClientModule
   ],
-  providers: [FiltresService],
+  providers: [
+    FiltresService,
+    ReportingCaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,54 +1,54 @@
 <app-filtres></app-filtres>
 
-<table id="reporting-table" class="table table-hover">
+<table id="reporting-table" class="table table-striped">
   <thead class="text-center">
     <tr>
-      <th rowspan="3"></th>
-      <th colspan="8">Charges</th>
-      <th colspan="6">Revenu</th>
       <th>Sens</th>
+      <th colspan="6">Revenu</th>
+      <th colspan="8">Charges</th>
+      <th rowspan="3"></th>
     </tr>
     <tr>
-      <th rowspan="2">Charge</th>
-      <th rowspan="2">Frais</th>
-      <th colspan="6">Facture</th>
-      <th rowspan="2">Revenu</th>
-      <th colspan="5">Facture</th>
       <th>Nature</th>
+      <th colspan="5">Facture</th>
+      <th rowspan="2">Revenu</th>
+      <th colspan="6">Facture</th>
+      <th rowspan="2">Frais</th>
+      <th rowspan="2">Charge</th>
     </tr>
     <tr>
-      <th>Facture</th>
-      <th>AHEAD</th>
-      <th>ICV</th>
-      <th>By Arch</th>
-      <th>Plex</th>
-      <th>Chr</th>
-      <th>Facture</th>
-      <th>Educ</th>
-      <th>MSF</th>
-      <th>Taliko</th>
-      <th>Banque int</th>
       <th>Tiers</th>
+      <th>Banque int</th>
+      <th>Taliko</th>
+      <th>MSF</th>
+      <th>Educ</th>
+      <th>Facture</th>
+      <th>Chr</th>
+      <th>Plex</th>
+      <th>By Arch</th>
+      <th>ICV</th>
+      <th>AHEAD</th>
+      <th>Facture</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let item of ca">
-      <td>{{ (item.charge.facture.AHEAD + item.charge.facture.ICV + item.charge.facture.BAC + item.charge.facture.PLEXCOFO + item.charge.facture.CHR + item.charge.frais) + (item.revenu.EN + item.revenu.MSF + item.revenu.taliko + item.revenu.BIL) }}</td>
-      <td>{{ item.charge.facture.AHEAD + item.charge.facture.ICV + item.charge.facture.BAC + item.charge.facture.PLEXCOFO + item.charge.facture.CHR + item.charge.frais }}</td>
-      <td>{{ item.charge.frais }}</td>
-      <td>{{ item.charge.facture.AHEAD + item.charge.facture.ICV + item.charge.facture.BAC + item.charge.facture.PLEXCOFO + item.charge.facture.CHR }}</td>
-      <td>{{ item.charge.facture.AHEAD }}</td>
-      <td>{{ item.charge.facture.ICV }}</td>
-      <td>{{ item.charge.facture.BAC }}</td>
-      <td>{{ item.charge.facture.PLEXCOFO }}</td>
-      <td>{{ item.charge.facture.CHR }}</td>
-      <td>{{ item.revenu.EN + item.revenu.MSF + item.revenu.taliko + item.revenu.BIL }}</td>
-      <td>{{ item.revenu.EN + item.revenu.MSF + item.revenu.taliko + item.revenu.BIL }}</td>
-      <td>{{ item.revenu.EN }}</td>
-      <td>{{ item.revenu.MSF }}</td>
-      <td>{{ item.revenu.taliko }}</td>
-      <td>{{ item.revenu.BIL }}</td>
       <td>{{ item.date }}</td>
+      <td>{{ item.revenu.BIL }}</td>
+      <td>{{ item.revenu.taliko }}</td>
+      <td>{{ item.revenu.MSF }}</td>
+      <td>{{ item.revenu.EN }}</td>
+      <td><strong>{{ item.revenu.EN + item.revenu.MSF + item.revenu.taliko + item.revenu.BIL}}</strong></td>
+      <td><strong>{{ item.revenu.EN + item.revenu.MSF + item.revenu.taliko + item.revenu.BIL }}</strong></td>
+      <td>{{ item.charge.facture.CHR }}</td>
+      <td>{{ item.charge.facture.PLEXCOFO }}</td>
+      <td>{{ item.charge.facture.BAC }}</td>
+      <td>{{ item.charge.facture.ICV }}</td>
+      <td>{{ item.charge.facture.AHEAD }}</td>
+      <td><strong>{{ item.charge.facture.AHEAD + item.charge.facture.ICV + item.charge.facture.BAC + item.charge.facture.PLEXCOFO + item.charge.facture.CHR }}</strong></td>
+      <td><strong>{{ item.charge.frais }}</strong></td>
+      <td><strong>{{ item.charge.facture.AHEAD + item.charge.facture.ICV + item.charge.facture.BAC + item.charge.facture.PLEXCOFO + item.charge.facture.CHR + item.charge.frais }}</strong></td>
+      <td><strong>{{ (item.charge.facture.AHEAD + item.charge.facture.ICV + item.charge.facture.BAC + item.charge.facture.PLEXCOFO + item.charge.facture.CHR + item.charge.frais) + (item.revenu.EN + item.revenu.MSF + item.revenu.taliko + item.revenu.BIL) }}</strong></td>
     </tr>
   </tbody>
 </table>

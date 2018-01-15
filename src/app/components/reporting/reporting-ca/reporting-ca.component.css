@@ -1,5 +1,5 @@
 #reporting-table {
-    font-size: 12px;
+    font-size: 11.5px;
 }
 
 #reporting-table thead {
@@ -9,4 +9,8 @@
 
 #reporting-table thead th {
     border: solid white 1px;
+}
+
+#reporting-table tbody td {
+  border: solid dimgrey 1px;
 }

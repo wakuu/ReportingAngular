@@ -122,6 +122,101 @@ export class ReportingCaComponent implements OnInit {
                     frais: -4773.00
                 }
             },
+            {
+                date: '2017-06',
+                revenu: {
+                    BIL: 13585.00,
+                    taliko: null,
+                    MSF: null,
+                    EN: null
+                },
+                charge: {
+                    facture: {
+                        CHR: -1600.00,
+                        PLEXCOFO: -6000.00,
+                        BAC: null,
+                        ICV: null,
+                        AHEAD: null
+                    },
+                    frais: -237.41
+                }
+            },
+            {
+                date: '2017-07',
+                revenu: {
+                    BIL: null,
+                    taliko: 2170.92,
+                    MSF: 3660.00,
+                    EN: null
+                },
+                charge: {
+                    facture: {
+                        CHR: -1600.00,
+                        PLEXCOFO: -6000.00,
+                        BAC: -3960.00,
+                        ICV: null,
+                        AHEAD: null
+                    },
+                    frais: -1391.02
+                }
+            },
+            {
+                date: '2017-08',
+                revenu: {
+                    BIL: null,
+                    taliko: 2800.00,
+                    MSF: null,
+                    EN: null
+                },
+                charge: {
+                    facture: {
+                        CHR: -3300.00,
+                        PLEXCOFO: -7200.00,
+                        BAC: -6435.00,
+                        ICV: null,
+                        AHEAD: null
+                    },
+                    frais: -2790.82
+                }
+            },
+            {
+                date: '2017-09',
+                revenu: {
+                    BIL: 12850.00,
+                    taliko: 22270.00,
+                    MSF: null,
+                    EN: 2400.00
+                },
+                charge: {
+                    facture: {
+                        CHR: -5600.00,
+                        PLEXCOFO: -8200.00,
+                        BAC: null,
+                        ICV: null,
+                        AHEAD: null
+                    },
+                    frais: -3674.52
+                }
+            },
+            {
+                date: '2017-10',
+                revenu: {
+                    BIL: 18050.00,
+                    taliko: 21930.00,
+                    MSF: null,
+                    EN: null
+                },
+                charge: {
+                    facture: {
+                        CHR: -5300.00,
+                        PLEXCOFO: -8200.00,
+                        BAC: -8910.00,
+                        ICV: null,
+                        AHEAD: null
+                    },
+                    frais: -4773.00
+                }
+            },
         ];
     }
 }

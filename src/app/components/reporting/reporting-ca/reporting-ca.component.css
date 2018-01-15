@@ -1,0 +1,12 @@
+#reporting-table {
+    font-size: 12px;
+}
+
+#reporting-table thead {
+    background: #374c61;
+    color: white;
+}
+
+#reporting-table thead th {
+    border: solid white 1px;
+}

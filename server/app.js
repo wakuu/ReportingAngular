@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 
@@ -12,6 +13,9 @@ app.use(cors());
 
 // Body Parser Middleware
 app.use(bodyParser.json());
+
+// Set Static Folder
+app.use(express.static(path.join(__dirname, '../dist')));
 
 // Index Route
 app.get('/', function (req, resp) {
@@ -214,6 +218,10 @@ app.get('/api/reporting', (req, resp) => {
     ];
 
     return resp.status(200).send(data);
+});
+
+app.get('*', (res, resp) => {
+    resp.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
 // Start Server

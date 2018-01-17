@@ -43,3 +43,24 @@ Etape 2 : Lancer le serveur
 
 Toujours dans le même dossier exécutez la commande :
     "node app.js"
+
+--------------------------------------------------------------------------------------------------
+
+MAINTIEN DU CODE
+
+- Les dépendances se trouvent dans ./package.json
+- Les components se trouvent dans : src/app/components
+- Les services se trouvent dans : src/app/services
+- Les routes se trouvent dans src/app/routing.module.ts
+
+
+--------------------------------------------------------------------------------------------------
+
+TESTS FONCTIONNELS
+
+La seule et unique page doit se présenter comme dans le lien (https://imageshack.com/a/img923/235/TYUE5w.png)
+Description :
+ - Un container principal doit s'afficher avec comme titre : Liste des rapports
+ - A l'intérieur il doit y avoir actuellement 2 onglets. Un pour le rapport Chiffre d'affaire et un Autre
+ - A l'intérieur des onglets on trouve une partie filtres avec les filtres nécessaires pour le rapport
+ - Au centre le rapport est visible sous forme de tableau
